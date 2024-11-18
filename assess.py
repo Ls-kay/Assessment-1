@@ -5,14 +5,23 @@ def grade_average(grades):
     Args:
         grades (list): List of grades to calculate
     """
+    st_lst = grades[grades:]
+    nd_lst = grades[:grades - 1]
+
+    ave = st_lst + nd_lst // 2
+    return ave
 
 
 def find_prime_factors(number):
-    """Write code to return the prime factors of the number. 
+    """Write code to return the prime factors of the number.
 
     Args:
         number (int): Number to find the prime factors of
     """
+    for i in range(number):
+        if number % i == 0:
+            return i
+
 
 
 def calculate_interest(principal, rate, years):
@@ -25,6 +34,7 @@ def calculate_interest(principal, rate, years):
     """
 
 
+
 def code_word(code):
     """Write a program that returns the word given a code.
 
@@ -34,6 +44,13 @@ def code_word(code):
     Args:
         code (list): The code to decipher
     """
+    alph = {1: "a", 3: "c", 16: "p", 25: "y", 20: "t", 8: "h",
+    15: "o", 14: "n", 21: "u", 18: "r", 5: "e", 9: "i", 0: " ",
+    4: "d"}
+
+    for i in code:
+        if i in code:
+        
 
 
 def triangles(length):
@@ -51,6 +68,13 @@ def triangles(length):
     Args:
         length (int): The ;ength your triangle should be
     """
+
+    for c in range(length):
+        column = print(c, end="")
+        return column
+        for r in length:
+            row = print(r, "\n")
+            return row
 
 
 def hollow_triangle(length):

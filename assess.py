@@ -49,8 +49,8 @@ def code_word(code):
     4: "d"}
 
     for i in code:
-        if i in code:
-        
+        if i in alph:
+            print(i)
 
 
 def triangles(length):

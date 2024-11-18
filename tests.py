@@ -21,8 +21,10 @@ class TestCase(unittest.TestCase):
     def test_interest(self):
         # write tests that cater for the output being an integer, unexpected outputs and expected ouputs
         self.assertIsInstance(calculate_interest(2000, 15/100, 5), int, "Expected an integer")
-        self.assertEqual(calculate_interest(2), 2, None)
-        self.assertEqual(calculate_interest(300, 14/1000, "Unexpected output"))
+        self.assertEqual(calculate_interest(0), 0, None)
+        self.assertEqual(calculate_interest(300, 14/1000, 3), "Unexpected output")
+        self.assertEqual(calculate_interest(-100, 14/100, 5), "Unexpected output")
+        
         pass
 
 
